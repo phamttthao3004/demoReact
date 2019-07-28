@@ -1,6 +1,5 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { shallowToJson } from "enzyme-to-json";
 import NewsUI from "./news.ui";
 
 describe("News UI", () => {
@@ -11,7 +10,6 @@ describe("News UI", () => {
       onClick: undefined,
       onSearch: undefined
     };
-    const com = shallow(<NewsUI {...props} />);
-    expect(shallowToJson(com)).toMatchSnapshot();
+    shallow(<NewsUI {...props} />);
   });
 });

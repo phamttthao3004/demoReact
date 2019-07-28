@@ -1,6 +1,5 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { shallowToJson } from "enzyme-to-json";
 import ListItemUI from "./list-item.ui";
 
 describe("ListItem UI", () => {
@@ -17,7 +16,6 @@ describe("ListItem UI", () => {
       clickPrevious: undefined,
       clickNext: undefined
     };
-    const com = shallow(<ListItemUI {...props} />);
-    expect(shallowToJson(com)).toMatchSnapshot();
+    shallow(<ListItemUI {...props} />);
   });
 });
