@@ -4,7 +4,7 @@ import CONSTANTS from "../../scripts/constants";
 describe("Test GetNavigationParam function", () => {
   it("pageID is undefined", () => {
     const pageId = undefined;
-    const result = { pathname: CONSTANTS.NAV_URL.NOT_FOUND };
+    const result = undefined;
     expect(GetNavigationParam(pageId)).toMatchObject(result);
   });
 
