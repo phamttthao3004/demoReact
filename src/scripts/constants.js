@@ -2,6 +2,7 @@ const CONSTANTS = new (function() {
   this.API_DOMAIN = `https://newsapi.org/v2/everything`;
   this.API_KEY = "1f786742b00c448f86e480f27cbef264";
   this.DOMAIN_LIST = ["cnn.com", "nytimes.com"];
+  this.PAGE_SIZE = 100;
   this.NAV_URL = new (function() {
     this.HOME = "/";
     this.HISTORY = `${this.HOME}history`;

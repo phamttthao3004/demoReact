@@ -17,7 +17,7 @@ const News = () => {
     for (let obj of CONSTANTS.DOMAIN_LIST) {
       const api = `${CONSTANTS.API_DOMAIN}?domains=${obj}&apiKey=${
         CONSTANTS.API_KEY
-      }`;
+      }&pageSize=${CONSTANTS.PAGE_SIZE}`;
       a.push(fetch(api).then(value => value.json()));
     }
     return a;
