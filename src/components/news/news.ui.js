@@ -7,7 +7,7 @@ const NewsUI = ({ data, onChange, onSearch, onClick }) => {
     <ListItem data={data} onChange={onChange} onSearch={onSearch}>
       {data.map(item => {
         return item.show ? (
-          <div className="col-md-6 col-12">
+          <div className="col-md-6 col-12" key={item.index}>
             <div className="news-item">
               <a href="#" onClick={onClick.bind(this, item)} target="_blank">
                 {item.urlToImage ? (

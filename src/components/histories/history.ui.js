@@ -7,7 +7,7 @@ const HistoryUI = ({ data, onChange, onSearch }) => {
     <ListItem data={data} onChange={onChange} onSearch={onSearch}>
       {data.map(item => {
         return item.show ? (
-          <div className="col-md-6 col-12">
+          <div className="col-md-6 col-12" key={item.index}>
             <div className="news-item">
               <a href={item.url} target="_blank">
                 {item.urlToImage ? (
